@@ -91,7 +91,7 @@ function App() {
         <div className="container-fluid d-flex align-items-center justify-content-center p-5" style={{ height: "100vh" }}>
           <div className="row w-100 justify-content-center">
             <div className="col-12 col-md-6 d-flex justify-content-center">
-              <img src="../src/img/toga.jpg" alt="Profile" className="pic1 img-fluid" />
+              <img src="../img/toga.jpg" alt="Profile" className="pic1 img-fluid" />
             </div>
             <div className="col-12 col-md-6 d-flex flex-column mt-5 text-md-left">
               <motion.p
