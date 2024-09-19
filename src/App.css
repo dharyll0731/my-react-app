@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bcf002; 
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+/* START SECTION 1 */
+#section1 {
+  background: linear-gradient(to right, #000000, #252323);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.pic1 {
+  border-radius: 4%;
+  width: 600px; /* Set a fixed width */
+  height: 700px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image is scaled correctly */
+}
+
+
+.dharyll {
+  font-size: 9vh;
+  color: white;
+}
+
+.title{
+  color: #bcf002;
+}
+/* END SECTION 1 */
+
+
+/* SECTION 2 */
+
+#section2 {
+  background: linear-gradient(to right, #000000, #252323);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.sec2{
+  background: linear-gradient(to right, #000000, #000000);
+}
+
+.contact {
+  background-color: #000000;
+  border: 2px solid #bcf002; /* Adjusted border shorthand */
+  border-radius: 25px; /* Adjust the radius as needed */
+  padding: 20px; /* Added padding for spacing inside the box */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .pic1 {
+    border-radius: 50%; /* Ensures the image is round */
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image is scaled correctly */
+  }
+
+}
+
+@media (min-width: 992px) {
+  .contact {
+    padding: 30px; /* Increase padding for larger screens */
+    border-radius: 30px; /* Slightly larger radius for desktops */
+  }
+}
+
+
+/* END SECTION 2 */
+
+/* START SECTION 3 */
+
+#section3 {
+  background: linear-gradient(to right, #000000, #252323);
+  width: 100%;
+  min-height: 50vh; /* Reduced height for more flexible responsiveness */
+  height: auto;
+  padding: 50px 0;
+  z-index: 2;
+}
+
+.braces {
+  font-size: 300px; /* Reduced for mobile view */
+  color: #bcf002;
+}
+
+.expands {
+  border: solid #535353 7px;
+  padding: 30px 15px; /* Adjusted for better responsiveness */
+  border-radius: 3%;
+}
+
+.exp {
+  height: auto; /* Removed fixed height */
+  margin-bottom: 30px;
+}
+
+.check {
+  font-size: 30px; /* Adjusted for mobile view */
+  color: #bcf002;
+}
+
+@media (min-width: 768px) {
+  .resume {
+    height: auto; /* Allows the height to adjust based on content */
+    padding: 100px;
+  }
+  .exp {
+    margin-bottom: 40px;
+  }
+
+}
+
+/* END SECTION 3 */
+
+
+/* SECTION 4 */
+#section4 {
+  background: linear-gradient(to right, #000000, #252323);
+  height: auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.cardBorder{
+  border: solid 2px #ffffff ;
+  background-color: #252323;
+}
+
+
+
+/* END OF SECTION 4 */
+
+.footer{
+  background: linear-gradient(to left, #000000, #252323);
+}
+.footerBraces{
+  font-size: 100px; /* Reduced for mobile view */
+  color: #bcf002;
+}
+
+
+
+
+
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .dharyll {
+    font-size: 5vh;
+  }
+  .roboto-thin-italic {
+    font-size: 3vh;
+  }
+  h4 {
+    font-size: 2vh;
+  }
+
+  .braces {
+    font-size: 250px; /* Reduced for mobile view */
+    color: #bcf002;
+  }
+
+
+}
