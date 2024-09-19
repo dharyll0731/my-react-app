@@ -7,6 +7,19 @@ import Lottie from 'lottie-react';
 import computer from './lottie/computer.json';
 import Navbar from './components/Navbar';
 
+
+// Import images
+import profilePic from './img/toga.jpg';
+import phpImg from './img/php.png';
+import reactImg from './img/react.png';
+import sqlImg from './img/sql.png';
+import jsImg from './img/js.png';
+import ajaxImg from './img/ajax.png';
+import jqueryImg from './img/jquery.png';
+import cssImg from './img/css.png';
+import htmlImg from './img/html.png';
+
+
 // LOTTIE
 const defaultOptions = {
   loop: true,
@@ -91,7 +104,7 @@ function App() {
         <div className="container-fluid d-flex align-items-center justify-content-center p-5" style={{ height: "100vh" }}>
           <div className="row w-100 justify-content-center">
             <div className="col-12 col-md-6 d-flex justify-content-center">
-              <img src="../img/toga.jpg" alt="Profile" className="pic1 img-fluid" />
+            <img src={profilePic} alt="Profile" className="pic1 img-fluid" />
             </div>
             <div className="col-12 col-md-6 d-flex flex-column mt-5 text-md-left">
               <motion.p
@@ -352,14 +365,14 @@ function App() {
                 animate="visible"
               >
                 <div className="row g-4">
-                  <SkillCard imgSrc="../src/img/php.png" altText="Skill Logo" title="PHP" percentage="80%" />
-                  <SkillCard imgSrc="../src/img/react.png" altText="Skill Logo" title="React JS" percentage="70%" />
-                  <SkillCard imgSrc="../src/img/sql.png" altText="Skill Logo" title="MySQL" percentage="90%" />
-                  <SkillCard imgSrc="../src/img/js.png" altText="Skill Logo" title="JavaScript" percentage="75%" />
-                  <SkillCard imgSrc="../src/img/ajax.png" altText="Skill Logo" title="AJAX" percentage="85%" />
-                  <SkillCard imgSrc="../src/img/jquery.png" altText="Skill Logo" title="JQuery" percentage="85%" />
-                  <SkillCard imgSrc="../src/img/css.png" altText="Skill Logo" title="CSS" percentage="80%" />
-                  <SkillCard imgSrc="../src/img/html.png" altText="Skill Logo" title="HTML" percentage="80%" />
+                  <SkillCard imgSrc={phpImg} altText="Skill Logo" title="PHP" percentage="80%" />
+                  <SkillCard imgSrc={reactImg} altText="Skill Logo" title="React JS" percentage="70%" />
+                  <SkillCard imgSrc={sqlImg} altText="Skill Logo" title="MySQL" percentage="90%" />
+                  <SkillCard imgSrc={jsImg} altText="Skill Logo" title="JavaScript" percentage="75%" />
+                  <SkillCard imgSrc={ajaxImg} altText="Skill Logo" title="AJAX" percentage="85%" />
+                  <SkillCard imgSrc={jqueryImg} altText="Skill Logo" title="JQuery" percentage="85%" />
+                  <SkillCard imgSrc={cssImg} altText="Skill Logo" title="CSS" percentage="80%" />
+                  <SkillCard imgSrc={htmlImg} altText="Skill Logo" title="HTML" percentage="80%" />
                 </div>
               </motion.div>
             </div>
